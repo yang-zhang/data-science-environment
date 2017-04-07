@@ -2,9 +2,6 @@
 layout: default
 ---
 
-[Docker](docker/README)
-
-
 
 ## Welcome to GitHub Pages
 
