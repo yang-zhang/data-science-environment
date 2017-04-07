@@ -2,7 +2,7 @@
 
 ## Jupyter notebook autosave to python file and html file
 Saving notebook into python files for easier version control. Save [`jupyter_notebook_config.py`](https://github.com/yang-zhang/ds-env/blob/master/jupyter_notebook_config.py) as `~/.jupyter/jupyter_notebook_config.py`. For jupyter in docker, see [here](https://github.com/yang-zhang/ds-env/blob/master/docker/dockerfiles/yang-zhang-ds.docker#L8). 
-Reference [here](http://protips.maxmasnick.com/ipython-notebooks-automatically-export-py-and-html)
+Reference [here](http://protips.maxmasnick.com/ipython-notebooks-automatically-export-py-and-html).
 
 
 ## Jupyter notebook extensions
