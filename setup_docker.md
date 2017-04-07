@@ -1,9 +1,9 @@
 # Docker Setup
 
 ## Build docker image
-Under `data-science-environment/docker/`, run
+Under `data-science-environment`, run
 ```
-docker build --file dockerfiles/yang-zhang-ds.docker -t yang-zhang-ds .
+docker build --file docker/dockerfiles/yang-zhang-ds.docker -t yang-zhang-ds .
 ```
 ## Add shortcuts 
 In `.bash_profile`, add
