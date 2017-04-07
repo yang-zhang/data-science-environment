@@ -4,6 +4,7 @@ Software Environment for Data Science.
 - [Using Docker](using_docker.md)
 - [Jupyter Setup](setup_jupyter.md)
 - [Using Jupyter](using_jupyter.ipynb)
+- [Jupyter Slideshow](jupyter_slideshow.ipynb)
 - [Deep Learning Setup](setup_deep_learning.md)
 
 
