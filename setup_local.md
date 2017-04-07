@@ -53,20 +53,22 @@ cd python-package; sudo python setup.py install
 ```
 
 ## R
+
 ### Add R kernal:
 ```
 conda install -c r r-essentials
 ```
 ### Install package
+
 #### In code
 ```
 from rpy2.robjects.packages import importr
 utils = importr('utils')
 utils.install_packages(ro.StrVector(['entropy', 'psych', 'vcd']))
 ```
+
 #### Run a R kernal in Jupyter and run
 install.packages(c('entropy', 'psych', 'vcd'))
-
 
 ## Git
 Git setup for contributing to repo. See [here](http://kbroman.org/github_tutorial/pages/fork.html)
@@ -74,19 +76,23 @@ Git setup for contributing to repo. See [here](http://kbroman.org/github_tutoria
 - Clone your forked repo: git clone https://github.com/yang-zhang/xgboost
 - Add original owner’s repository: cd xgboost; git remote add dmlc https://github.com/dmlc/xgboost
 - Show remote repo: git remote -v
+
 ### Add remote branch
 ```
 git checkout --track origin/name_of_the_remote_branch
 ```
 
 ## Misc Hacks
+
 ### Python 2 to 3
 ```
 2to3 -w example.py
 ```
+
 ### Control video speed
 - [Google YouTube Keyboard Shortcuts](https://sites.google.com/a/umich.edu/going-google/accessibility/google-keyboard-shortcuts---youtube)
 - [Video Speed Controller - Chrome extension](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk)
+
 ### Kaggle
 ```
 !kg config -g -u $KAGGLE_USER -p $KAGGLE_PW -c $competition_name
