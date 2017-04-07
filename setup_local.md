@@ -1,5 +1,6 @@
 # Software Setup
 Setting up software environement for Data Science.
+
 ## Conda
 Environment
 If you have conda3, Install Python2.7 with everything that comes with anaconda
@@ -25,6 +26,7 @@ cd python-package; sudo python setup.py install
 ```
 
 ## `.bash_profile`
+Add [ds-utils](https://github.com/yang-zhang/ds-utils) to path:
 ```
 export PYTHONPATH="/Users/yangzhang/git/ds-utils:/Users/yangzhang/secrets:$PYTHONPATH"
 
@@ -32,6 +34,7 @@ alias jn='jupyter notebook'
 alias sa='source activate'
 alias sda='source deactivate'
 ```
+
 ## `secrets.py`
 In `~/git/secrets/secrets.py`, add:
 ```
@@ -41,12 +44,12 @@ AWS_SECRET='ABCXYZ'
 KAGGLE_USER='zhangyang'
 KAGGLE_PW='123'
 ```
+
 ## Imports
-Add the following to the beginning of code for frequent modules and setups.
+Use a [customerized import script](https://github.com/yang-zhang/ds-utils/blob/master/ds_utils/imports.py) for frequent modules and setups. Add the following to the beginning of code:
 ```
 import ds_utils.imports; import imp; imp.reload(ds_utils.imports)
 from ds_utils.imports import
-https://github.com/yang-zhang/ds-utils/blob/master/ds_utils/imports.py
 ```
 
 ## git
