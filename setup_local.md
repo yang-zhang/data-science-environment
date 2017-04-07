@@ -16,15 +16,6 @@ Clone from existing env
 conda create -n new_env --clone root
 ```
 
-## xgboost
-Conda's version is old.
-```
-cd Downloads
-git clone --recursive https://github.com/dmlc/xgboost
-cd xgboost; cp make/minimum.mk ./config.mk; make -j4
-cd python-package; sudo python setup.py install
-```
-
 ## `.bash_profile`
 Add [ds-utils](https://github.com/yang-zhang/ds-utils) to path:
 ```
@@ -52,15 +43,13 @@ import ds_utils.imports; import imp; imp.reload(ds_utils.imports)
 from ds_utils.imports import
 ```
 
-## git
-git setup for contributing to repo [howto](http://kbroman.org/github_tutorial/pages/fork.html)
-- Fork the repo on github (e.g. https://github.com/dmlc/xgboost)
-- Clone your forked repo: git clone https://github.com/yang-zhang/xgboost
-- Add original owner’s repository: cd xgboost; git remote add dmlc https://github.com/dmlc/xgboost
-- Show remote repo: git remote -v
-### Add remote branch
+## xgboost
+Conda's version is old.
 ```
-git checkout --track origin/name_of_the_remote_branch
+cd Downloads
+git clone --recursive https://github.com/dmlc/xgboost
+cd xgboost; cp make/minimum.mk ./config.mk; make -j4
+cd python-package; sudo python setup.py install
 ```
 
 ## R
@@ -77,6 +66,18 @@ utils.install_packages(ro.StrVector(['entropy', 'psych', 'vcd']))
 ```
 #### Run a R kernal in Jupyter and run
 install.packages(c('entropy', 'psych', 'vcd'))
+
+
+## Git
+Git setup for contributing to repo. See [here](http://kbroman.org/github_tutorial/pages/fork.html)
+- Fork the repo on github (e.g. https://github.com/dmlc/xgboost)
+- Clone your forked repo: git clone https://github.com/yang-zhang/xgboost
+- Add original owner’s repository: cd xgboost; git remote add dmlc https://github.com/dmlc/xgboost
+- Show remote repo: git remote -v
+### Add remote branch
+```
+git checkout --track origin/name_of_the_remote_branch
+```
 
 ## Misc Hacks
 ### Python 2 to 3
