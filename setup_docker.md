@@ -1,7 +1,7 @@
 # Docker Setup
 
 ## Build docker image
-Under `data-science-environment`, run
+Under `data-science-environment/`, run
 ```
 docker build --file docker/dockerfiles/yang-zhang-ds.docker -t yang-zhang-ds .
 ```
