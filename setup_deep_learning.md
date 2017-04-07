@@ -9,6 +9,7 @@
   ```
   conda install -c conda-forge keras=1.2.2
   ```
+
 ## Set Keras backend
 
 ### In code
