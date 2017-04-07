@@ -1,5 +1,5 @@
 Software Environment for Data Science.
-- [Software Setup](setup_local)
+- [Software Setup](setup_local.md)
 - [Docker Setup](setup_docker)
 - [Using Docker](using_docker)
 - [Jupyter Setup](setup_jupyter)
