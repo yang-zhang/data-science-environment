@@ -1,32 +1,23 @@
 
 # coding: utf-8
 
-# ## Jupyter TODO
-# http://protips.maxmasnick.com/ipython-notebooks-automatically-export-py-and-html
+# ## Configurations
 
-# ## Frequent imports and configurations
+# In[ ]:
 
-# In[17]:
-
-get_ipython().magic('matplotlib inline')
-import numpy as np
-import pandas as pd
-import sklearn
-import matplotlib.pyplot as plt
+pd.options.display.max_columns = None
 
 
 # In[ ]:
 
-# from IPython.core.interactiveshell import InteractiveShell
-# InteractiveShell.ast_node_interactivity = "all"
+from IPython.core.pylabtools import figsize
+figsize(11, 9)
 
-# pd.options.display.max_columns = None
 
-# from IPython.core.pylabtools import figsize
-# figsize(11, 9)
+# In[ ]:
 
 # Set numpy display precision
-# np.set_printoptions(precision=4, linewidth=100)
+np.set_printoptions(precision=4, linewidth=100)
 
 
 # In[1]:
@@ -34,14 +25,30 @@ import matplotlib.pyplot as plt
 get_ipython().run_cell_magic('javascript', '', 'IPython.OutputArea.auto_scroll_threshold = 9999;')
 
 
+# ## Download file (useful when running jupyter on remote machine)
+
+# In[22]:
+
+from IPython.display import FileLink
+FileLink('README.md')
+
+
 # ## IPython Magics
 
 # ### %who: List all variables of global scope.
 
-# In[18]:
+# In[3]:
 
 a=1; b=2; c='hi'
+
+
+# In[4]:
+
 get_ipython().magic('who')
+
+
+# In[5]:
+
 get_ipython().magic('who str')
 
 
@@ -60,38 +67,38 @@ a = '~'; b = 'git'
 get_ipython().system('ls $a | grep $b')
 
 
-# ## Download file from remote machine
-
-# In[22]:
-
-from IPython.display import FileLink
-FileLink('README.md')
-
-
 # ## Suppress the output of a final function
 # By adding a semicolon at the end, the output is suppressed.
 # 
 
-# In[10]:
+# In[3]:
 
-plt.plot([1,2], [2,4])
+def print_and_return(a):
+    print(a)
+    return 1
 
 
-# In[11]:
+# In[6]:
 
-plt.plot([1,2], [2,4]);
+print_and_return('a')
+
+
+# In[7]:
+
+print_and_return('a');
 
 
 # ## Display image file
 
-# In[14]:
+# In[9]:
 
+import matplotlib.pyplot as plt
 fig, ax = plt.subplots()
 ax.plot([1,2],[2,4])
 fig.savefig('_.png')
 
 
-# In[15]:
+# In[10]:
 
 from IPython.display import Image 
 Image("_.png")
@@ -113,7 +120,7 @@ Image("_.png")
 # p(\textbf{w}| \textbf{x}, \textbf{t}) d\textbf{w}
 # $$
 
-# In[24]:
+# In[11]:
 
 get_ipython().run_cell_magic('latex', '', 'As code: $P(A \\mid B) = \\frac{P(B \\mid A) \\, P(A)}{P(B)}$')
 
