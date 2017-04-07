@@ -1,3 +1,5 @@
+# Docker Setup
+
 ### Build docker image
 Under `data-science-environment/docker/`, run
 ```
