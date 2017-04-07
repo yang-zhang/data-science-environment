@@ -1,0 +1,8 @@
+FROM kaggle/python:latest
+
+RUN conda install -c conda-forge jupyter_contrib_nbextensions && \
+    conda install -c conda-forge jupyter_nbextensions_configurator && \
+    conda install -c conda-forge yapf=0.13.2 && \
+    conda install -c r rpy2=2.8.5 && \
+    pip install kaggle-cli
+ADD jupyter_notebook_config.py /root/.jupyter/
