@@ -28,7 +28,7 @@ cd python-package; sudo python setup.py install
 ## `.bash_profile`
 Add [ds-utils](https://github.com/yang-zhang/ds-utils) to path:
 ```
-export PYTHONPATH="/Users/yangzhang/git/ds-utils:/Users/yangzhang/secrets:$PYTHONPATH"
+export PYTHONPATH="/Users/yangzhang/git/ds-utils:/Users/yangzhang/git/secrets:$PYTHONPATH"
 
 alias jn='jupyter notebook'
 alias sa='source activate'
