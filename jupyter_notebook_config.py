@@ -35,10 +35,10 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
         f.write(script)
 
     # save html
-    base, ext = os.path.splitext(os_path)
-    script, resources = _html_exporter.from_filename(os_path)
-    script_fname = base + resources.get('output_extension', '.txt')
-    log.info("Saving html /%s", to_api_path(script_fname, contents_manager.root_dir))
-    with io.open(script_fname, 'w', encoding='utf-8') as f:
-        f.write(script)
+    # base, ext = os.path.splitext(os_path)
+    # script, resources = _html_exporter.from_filename(os_path)
+    # script_fname = base + resources.get('output_extension', '.txt')
+    # log.info("Saving html /%s", to_api_path(script_fname, contents_manager.root_dir))
+    # with io.open(script_fname, 'w', encoding='utf-8') as f:
+    #     f.write(script)
 c.FileContentsManager.post_save_hook = script_post_save
