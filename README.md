@@ -9,5 +9,4 @@ Software Environment for Data Science.
   - [Jupyter Slideshow](jupyter_slideshow.ipynb)
 - [Deep Learning Setup](setup_deep_learning.md)
 
-
 Go back to [github/yang-zhang Home Page](https://yang-zhang.github.io/)
