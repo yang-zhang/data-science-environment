@@ -2,12 +2,12 @@
 
 ## Build docker image
 Under `data-science-environment/`, run
-```
+```bash
 docker build --file docker/dockerfiles/yang-zhang-ds.docker -t yang-zhang-ds .
 ```
 ## Add shortcuts 
 In `.bash_profile`, add
-```
+```bash
 # For docker start
 alias dcf='declare -F'
 
