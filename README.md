@@ -10,4 +10,4 @@ Software Environment for Data Science.
 - [Deep Learning Setup](setup_deep_learning.md)
 
 
-Go back to [yang-zhang Github Home Page](https://yang-zhang.github.io/)
+Go back to [github/yang-zhang Home Page](https://yang-zhang.github.io/)
