@@ -71,11 +71,23 @@ utils.install_packages(ro.StrVector(['entropy', 'psych', 'vcd']))
 install.packages(c('entropy', 'psych', 'vcd'))
 
 ## Git
-Git setup for contributing to repo. See [here](http://kbroman.org/github_tutorial/pages/fork.html)
+### Aliases in `~./.gitconfig`
+``` 
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+```
+### Git setup for contributing to repo
 - Fork the repo on github (e.g. https://github.com/dmlc/xgboost)
 - Clone your forked repo: git clone https://github.com/yang-zhang/xgboost
 - Add original owner’s repository: cd xgboost; git remote add dmlc https://github.com/dmlc/xgboost
 - Show remote repo: git remote -v
+See [here](http://kbroman.org/github_tutorial/pages/fork.html) for reference.
 
 ### Add remote branch
 ```
