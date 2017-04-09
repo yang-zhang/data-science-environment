@@ -71,7 +71,7 @@ utils.install_packages(ro.StrVector(['entropy', 'psych', 'vcd']))
 install.packages(c('entropy', 'psych', 'vcd'))
 
 ## Git
-### Aliases in `~./.gitconfig`
+### Aliases in `~/.gitconfig`
 ``` 
 [alias]
   co = checkout
