@@ -111,7 +111,7 @@ git checkout --track origin/name_of_the_remote_branch
 !kg download
 !kg submit $submit_file -u $KAGGLE_USER -p $KAGGLE_PW -m $model_description
 ```
-### `top` sort by memory usage
+### Make `top` sort by memory usage
 ```
 top -o MEM
 ```
