@@ -16,7 +16,7 @@ Clone from existing env
 conda create -n new_env --clone root
 ```
 
-## `.bash_profile`
+## Setup `.bash_profile`
 Add [ds-utils](https://github.com/yang-zhang/ds-utils) to path:
 ```
 export PYTHONPATH="/Users/yangzhang/git/ds-utils:/Users/yangzhang/git/secrets:$PYTHONPATH"
@@ -26,7 +26,7 @@ alias sa='source activate'
 alias sda='source deactivate'
 ```
 
-## `secrets.py`
+## Setup `secrets.py`
 In `~/git/secrets/secrets.py`, add:
 ```
 AWS_KEY='ABC123'
