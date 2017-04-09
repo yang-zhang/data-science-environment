@@ -12,4 +12,4 @@ Conda, bash_profile, serects, frequent imports, Git, R, xgboost, and miscellaneo
 Setting up software environment for deep learning.
 
 ---
-Go back to [github/yang-zhang Home Page](https://yang-zhang.github.io/)
+Back to [Home Page](https://yang-zhang.github.io/)
