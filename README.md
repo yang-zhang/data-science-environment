@@ -1,6 +1,7 @@
 Software Environment for Data Science.
 - [Software Setup](setup_local.md)
 Conda, bash_profile, serects, frequent imports, Git, R, xgboost, and miscellaneous tips.
+  - [Python](https://github.com/yang-zhang/ds-env/blob/master/python.ipynb): Python setups.
 - Docker
   - [Docker Setup](setup_docker.md): Dockerfile and how to run.
   - [Using Docker](using_docker.md): Docker cheatsheet.
