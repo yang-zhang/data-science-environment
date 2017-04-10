@@ -6,8 +6,8 @@ Conda, bash_profile, serects, frequent imports, Git, R, xgboost, and miscellaneo
   - [Using Docker](using_docker.md): Docker cheatsheet.
 - Jupyter
   - [Jupyter Setup](setup_jupyter.md): Jupyter setup and configuration.
-  - [Using Jupyter](using_jupyter.ipynb): Jupyter tips and cheatsheet.
-  - [Jupyter Slideshow](jupyter_slideshow.ipynb): How to run Jupyter Slideshow.
+  - [Using Jupyter](https://github.com/yang-zhang/ds-env/blob/master/using_jupyter.ipynb): Jupyter tips and cheatsheet.
+  - [Jupyter Slideshow](https://github.com/yang-zhang/ds-env/blob/master/jupyter_slideshow.ipynb): How to run Jupyter Slideshow.
 - [Deep Learning Setup](setup_deep_learning.md)
 Setting up software environment for deep learning.
 
