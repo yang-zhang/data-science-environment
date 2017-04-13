@@ -11,7 +11,10 @@
   ```
 
 ## Set Keras backend
-
+Show what backend is being used in code:
+```
+keras.backend.backend()
+```
 ### In code
 ```
 os.environ["KERAS_BACKEND"] = "theano"
