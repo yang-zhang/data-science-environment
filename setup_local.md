@@ -117,3 +117,4 @@ top -o MEM
 ```
 ### Add link to imported modules on github
 [Module Linker, a Chrome Extension for browsing source code better](http://fiatjaf.alhur.es/module-linker/#/python)
+### [Move tabs using keyboard in Chrome](https://chrome.google.com/webstore/detail/moigagbiaanpboaflikhdhgdfiifdodd)
