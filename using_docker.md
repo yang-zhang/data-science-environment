@@ -9,7 +9,11 @@ docker run -it --rm julia
 ## Get inside a running container
 ```
 docker ps
-sudo docker exec -i -t gallant_fermat /bin/bash
+sudo docker exec -it gallant_fermat bash
+```
+### Get inside the 
+```
+docker exec -it $(docker ps -l -q) bash
 ```
 
 ## Stop and delete all containers
