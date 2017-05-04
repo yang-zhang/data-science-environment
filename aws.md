@@ -6,8 +6,10 @@
   - A security group is a virtual firewall
     - Example name: "MyWebDMZ"
   - ssh (details [here](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)) 
-    - Change permit for generated ssh key: `$ chmod 400 .ssh/MyEC2KeyPair.pem`
-    - ssh: `$ ssh ec2-user@[Public IP]52.91.36.218 -i .ssh/MyEC2KeyPair.pem`
+    - Change permit for generated ssh key: `$ chmod 400 [pem file]`, e.g., `$ chmod 400 .ssh/MyEC2KeyPair.pem`
+    - ssh command:
+      - `$ ssh [user name]@[Public IP] -i [pem file]`, e.g.: `ssh ec2-user@52.91.36.218 -i .ssh/MyEC2KeyPair.pem`
+      - `$ ssh [user name]@[Public DNS] -i [pem file]`, e.g., `ssh ec2-user@ec2-52-91-36-218.compute-1.amazonaws.com -i .ssh/MyEC2KeyPair.pem`
     - User name:
       - For Amazon Linux, the user name is ec2-user. 
       - For RHEL, the user name is ec2-user or root. 
