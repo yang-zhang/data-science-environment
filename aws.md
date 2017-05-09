@@ -22,5 +22,5 @@
 
 
 ### References
-- (A Cloud Guru)[https://acloud.guru]
+- [A Cloud Guru](https://acloud.guru)
 
