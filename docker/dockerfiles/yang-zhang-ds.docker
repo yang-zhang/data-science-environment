@@ -5,6 +5,7 @@ RUN conda install -c conda-forge jupyter_contrib_nbextensions && \
     conda install -c conda-forge yapf=0.13.2 && \
     conda install -c r rpy2=2.8.5 && \
     conda install pytorch torchvision -c soumith && \
+    conda install -c conda-forge feather-format=0.3.1 && \
     pip install kaggle-cli && \
     pip install mxnet && \
     # Enable favorite jupyter notebook extensions (https://github.com/ipython-contrib/jupyter_contrib_nbextensions#3-enablingdisabling-extensions)
