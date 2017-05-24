@@ -6,8 +6,8 @@ RUN conda install -c conda-forge jupyter_contrib_nbextensions && \
     conda install -c r rpy2=2.8.5 && \
     conda install pytorch torchvision -c soumith && \
     conda install -c conda-forge feather-format=0.3.1 && \
-    conda install -c anaconda pydot=1.0.28 && \
-    conda install -c anaconda graphviz=2.38.0 && \
+    pip install graphviz && \
+    pip install pydot-ng && \
     pip install kaggle-cli && \
     pip install mxnet && \
     # Enable favorite jupyter notebook extensions (https://github.com/ipython-contrib/jupyter_contrib_nbextensions#3-enablingdisabling-extensions)
