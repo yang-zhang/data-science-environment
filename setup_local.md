@@ -1,8 +1,7 @@
 # Software Setup
 Setting up software environement for Data Science.
 
-## Conda
-Environment
+## Conda Environment
 If you have conda3, Install Python2.7 with everything that comes with anaconda
 ```
 conda create -n py27 python=2.7 anaconda
